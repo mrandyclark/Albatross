@@ -8,6 +8,19 @@
   	<%= csrf_meta_tags %>
 </head> 
 <body> 
-	<%= yield %>
+
+	<div data-role="page">	
+		<%= yield %>
+		
+		<div data-role="footer" data-id="foo1" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<a href="/" data-role="button" data-icon="home">Home</a>
+					<a href="/scorecard" data-role="button" data-icon="grid">I'm Playing</a>
+					<a href="/leaderboard" data-role="button" data-icon="star">Leaderboard</a>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+	</div>
 </body>
 </html>
