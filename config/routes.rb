@@ -50,6 +50,10 @@ Albatross::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'site#home'
 
+  match 'leaderboard', :to => 'leaderboard#index'
+  match 'profile', :to => 'profile#profile'
+  match 'scorecard', :to => 'scorecard#index'
+  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
