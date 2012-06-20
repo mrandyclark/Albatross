@@ -3,5 +3,13 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<%= render "shared/player-listing", :selectable => true %>
+		<%= form_tag "/scorecard/start_round" do %>
+			<%= submit_tag "Save" %>
+			<%= render "shared/player-listing", :selectable => true %>
+		<% end %>
 	</div><!-- /content -->
+	
+
+	<script>
+		Scorecard.init();		
+	</script>

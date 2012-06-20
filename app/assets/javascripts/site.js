@@ -4,6 +4,4 @@
 
 var Albatross = {};
 
-Albatross.init = function() {
-	alert("albatross initted");
-}
+Albatross.init = function() {};
